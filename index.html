@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+
+            <!-- left page -->
+            <div class="sectionleft">
+                <ul class="list">
+                    <li class="siyahı">
+                        <div id="green" class="circle"><div class="flexnum"><span class="num">1</span></div><img class="tikimg" src="img/complete.svg"> </div>
+                        <div  class="choice">Staff</div>
+                    </li>
+                    <li  class="siyahı">
+                        <div id="secondgreen" class="circle"><div class="flexnum"><span class="num">2</span></div><img class="tikimg" src="img/complete.svg"></div>
+                        <div id="cursorstyle"  class="choice"> Service </div>
+                    </li>
+                    <li class="siyahı">
+                        <div id="thirdgreen" class="circle"><div class="flexnum"><span class="num">3</span></div><img class="tikimg" src="img/complete.svg"></div>
+                        <div id="cursorstyle"  class="choice">Date&Time</div>
+                    </li>
+                    <li class="siyahı">
+                        <div id="fourthgreen" class="circle"><div class="flexnum"><span class="num">4</span></div><img class="tikimg" src="img/complete.svg"></div>
+                        <div id="cursorstyle"  class="choice"> Confurmation</div>
+                    </li>
+                </ul>
+                <div class="border"></div>
+            </div>
+
+            <!-- First Page -->
+            <div class="sectionright">
+                <p class="headertext">Select Staff</p>
+                <div class="sectionborder"></div>
+                <div onclick="openService1()" class="namesection1">
+                    <div>
+                        <img class="circlepic" src="img/firstdoctor.svg">
+                    </div>
+                    <div class="infodoctor">
+                        <p class="nametext">Alex Rosetta</p>
+                        <p class="mailtext">alexyrosetta@egmail.com</p>
+                    </div>
+                </div>
+                <div onclick="openService2()" class="namesection2">
+                    <div>
+                        <img class="circlepic2" src="img/doctorwoman.svg">
+                    </div>
+                    <div class="infodoctor2">
+                        <p class="nametext2">Maria July</p>
+                        <p class="mailtext2">mariajuly@egmail.com</p>
+                    </div>
+                </div>
+                <div class="sectionbottom">
+                    <button onclick="secondPage()" class="btn">Next</button>
+                </div>
+            </div>
+            <!-- Second Page -->
+            <div style="display: none;" class="sectionright">
+                <p class="headertext2">Select Service</p>
+                <div class="sectionborder2"></div>
+
+
+                <div onclick="openCalendar1()" class="servicesection1">
+
+                    <div class="generalinfo">
+                        <img class="circlepic3" src="img/oralhgyine.svg">
+                        <div class="infodoctor3">
+                            <p class="nametext3">Oral hygiene</p>
+                            <p class="mailtext3">1 hour</p>
+                        </div>
+                    </div>
+                    <div class="mark">50$</div>
+                </div>
+
+
+                <div onclick="openCalendar2()" class="servicesection2">
+                    <div class="generalinfo2">
+                        <img class="circlepic4" src="img/implant.svg">
+                        <div class="infodoctor4">
+                            <p class="nametext4">Implants</p>
+                            <p class="mailtext4">1 hour 30 minutes</p>
+                        </div>
+                    </div>
+                    <div class="mark2">120$</div>
+                </div>
+
+
+                <div onclick="openCalendar3()" class="servicesection3">
+                    <div class="generalinfo3">
+                        <img class="circlepic5" src="img/cehck-up.svg">
+                        <div class="infodoctor5">
+                            <p class="nametext5">Check up</p>
+                            <p class="mailtext5">1 hour 12 minutes</p>
+                        </div>
+                    </div>
+                    <div class="mark3">140$</div>
+                </div>
+
+
+
+
+
+                <div class="sectionbottom2">
+
+                    <button onclick="backFirst()" class="backbutton">Back</button>
+                    <button onclick="thirdPage()" class="btn2">Next</button>
+
+                </div>
+
+            </div>
+            <!-- Third  Page -->
+            <div style="display: none;" class="sectionright">
+                <p class="headertext">Select Date&Time</p>
+                <div id="1" class="sectionborder"></div>
+
+                <div class="chosendate">
+                    <div class="date">
+                        <div class="monthicons">
+                            <img class="icon" onclick="backMonth()" src="./img/lefticon.svg">
+                            <p class="month">August</p>
+                            <img class="icon" onclick="turnMonth()" src="img/rigthicon.svg">
+                        </div>
+                        <div class="calendar">
+                            <div class="weekdays">
+                                <ul class="dayflex">
+                                    <li class="day">Sun</li>
+                                    <li class="day">Mon</li>
+                                    <li class="day">Tue</li>
+                                    <li class="day">Wed</li>
+                                    <li class="day">Thu</li>
+                                    <li class="day">Fri</li>
+                                    <li class="day">Sat</li>
+                                </ul>
+                            </div>
+                            <div class="borderline"></div>
+                            <div class="days">
+                                <div class="item">1</div>
+                                <div class="item">2</div>
+                                <div class="item">3</div>
+                                <div onclick="getTime()" id="lighty" class="item">4</div>
+                                <div onclick="getTime()" id="lighty" class="item">5</div>
+                                <div onclick="getTime()" id="lighty" class="item">6</div>
+                                <div class="item">7</div>
+                                <div class="item">8</div>
+                                <div class="item">9</div>
+                                <div class="item">10</div>
+                                <div class="item">11</div>
+                                <div class="item">12</div>
+                                <div class="item">13</div>
+                                <div class="item">14</div>
+                                <div class="item">15</div>
+                                <div class="item">16</div>
+                                <div class="item">17</div>
+                                <div class="item">18</div>
+                                <div class="item">19</div>
+                                <div class="item">20</div>
+                                <div class="item">21</div>
+                                <div class="item">22</div>
+                                <div class="item">23</div>
+                                <div class="item">24</div>
+                                <div class="item">25</div>
+                                <div class="item">26</div>
+                                <div class="item">27</div>
+                                <div class="item">28</div>
+                                <div class="item">29</div>
+                                <div class="item">30</div>
+                                <div class="item"><span class="enditem">31</span></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="chooseday">
+                        <p class="time">Time</p>
+                        <div class="chosentime">
+                            <div class="headertime">
+                                <p class="datehead">Select date</p>
+                            </div>
+                            <div class="dateborder"> </div>
+                            <div class="noneflex">
+                                <div class="flexdate">
+                                    <div class="onedate">09:00<br> 09:30</div>
+                                    <div class="onedate">09:30<br> 10:00</div>
+                                    <div class="onedate">10:00<br> 10:30</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="sectionbottom3">
+                    <button onclick="backSecond()" class="backbutton1">Back</button>
+                    <button onclick="fourthPage()" class="btn3">Next</button>
+                </div>
+            </div>
+
+            <!-- Fourth  Page -->
+
+            <div style="display: none;" class="sectionright">
+                <p class="headertext">Confirm Detailes</p>
+                <div id="1" class="sectionborder"></div>
+
+                <div class="nameflex">
+                    <div class="leftinput">
+                        <p class="inputhead">First name <span class="star">*</span></p>
+                        <input class="input" type="text">
+                    </div>
+                    <div>
+                        <p class="inputhead">Last name <span class="star">*</span></p>
+                        <input class="input" type="text">
+                    </div>
+                </div>
+                <div   class="validationparent">
+                    <div  class="validation1">
+                        <p class="warning">Please, fill the all required fields!</p>
+                        <p class="confirmessage" >Confirmation successfully completed!</p>
+                        <img onclick="noneValid()" class="exitbtn" src="img/exit.svg">
+
+                    </div>
+                </div>
+
+                <div class="infoflex">
+                    <div class="leftinput">
+                        <p class="inputhead">E-mail <span class="star">*</span></p>
+                        <input class="input" type="text">
+                    </div>
+                    <div>
+                        <p class="inputhead">Phone </p>
+                        <input class="input" type="text">
+                    </div>
+                </div>
+
+
+                <p class="note">Note</p>
+                <div class="endinfo">
+                    <span class="infospan">Staff:</span><br>
+                    <span class="infospan">Service:</span><br>
+                    <span class="infospan">Date:</span><br>
+                    <span class="infospan">Staff:</span><br>
+                </div>
+
+                <div class="sectionbottom4">
+                    <button onclick="backThird()" class="backbutton2">Back</button>
+                    <button  class="btn4">Confirm Booking</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <!-- <input type="datetime-local" name="time" id="calendar"> -->
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
